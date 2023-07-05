@@ -43,26 +43,33 @@ a {
 }
 
 nav span a {
-    transition: color .4s linear;
     text-align: center;
     position: relative;
-    height: 100%;
-    padding: 15px 0;
+    height: fit-content;
+    padding: 15px 5px;
+    transition: background-color 0.4s linear;
 }
-
+/* 
 nav span a::before {
     content: '';
     height: 3px;
     width: 100%;
     background-color: #0077D5;
+    border-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
     transition: transform 0.4s linear;
 }
 
-nav span a::before:hover {
-    transform: translateX(left to right);
+nav span a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+nav span a:hover {
+    background-color: #eee;
 }
 
 nav span a#about {
@@ -132,12 +139,13 @@ div.aboutText p {
 
 div.aboutAvatar {
     /* background: url(); */
-    width: 500px;
+    width: 50%;
     height: 350px;
+    border-radius: 40px;
     background-color: var(--primary-color);
 }
 
-div.buttonLinks {
+div.skillbuttons {
     display: grid;
     place-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -146,7 +154,7 @@ div.buttonLinks {
     margin: auto;
 }
 
-div.buttonLinks a {
+div.skillbuttons div {
     display: flex;
     width: 150px;
     height: 60px;
@@ -162,7 +170,7 @@ div.buttonLinks a {
     font-size: 17px;
 }
 
-div.buttonLinks a:hover {
+div.skillbuttons div:hover {
     box-shadow: 0px 2px 6px 0px rgb(45, 171, 223);
 }
 
@@ -187,68 +195,68 @@ div.image {
 }
 
 div.imageOne {
-    background: url(Olumi_assets/fundmia.jpg); 
+    background: url(fundmia.jpg); 
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover; 
 }
 
 
 div.imageTwo {
-    background: url(Olumi_assets/Kwab\ web\ mock\ up.png); 
+    background: url(Kwab\ web\ mock\ up.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageThree {
-    background: url(Olumi_assets/ceresense\ mock\ up.png); 
+    background: url(ceresense\ mock\ up.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageFour {
-    background: url(Olumi_assets/project\ cis.png); 
+    background: url(project\ cis.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageFive {
-    background: url(Olumi_assets/umca\ x.png); 
+    background: url(umca\ x.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageSix {
-    background: url(Olumi_assets/vision\ pro\ exploration.png); 
+    background: url(vision\ pro\ exploration.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageSeven {
-    background: url(Olumi_assets/snack\ run.png); 
+    background: url(snack\ run.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageEight {
-    background: url(Olumi_assets/Sky\ wallet.png); 
+    background: url(Sky\ wallet.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageNine {
-    background: url(Olumi_assets/weather\ app.png); 
+    background: url(weather\ app.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageTen {
-    background: url(Olumi_assets/anime\ quote.png); 
+    background: url(anime\ quote.png); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
 div.imageEleven {
-    background: url(Olumi_assets/WhatsApp\ Image\ 2023-06-26\ at\ 16.53.09.jpg); 
+    background: url(WhatsApp\ Image\ 2023-06-26\ at\ 16.53.09.jpg); 
     background-repeat: no-repeat;
     background-size: cover;  
 }
@@ -325,12 +333,12 @@ div.contact_text p{
     margin: 30px 0;
 }
 
-div.contact_text a{
+div.contact_text i{
     font-size: 30px;
     margin-inline: 0 40px;
     color: #fff;
     height: fit-content;
-    transition: color 0.4s ease-in-out;
+    transition: color 0.4s linear;
 }
 
 i.fa-instagram:hover {
@@ -355,6 +363,7 @@ i.fa-right-to-bracket:hover {
 
 div.contactImage {
     background-color: #fff;
+    width: 50%;
     height: 300px;
     display: grid;
     place-content: center;
