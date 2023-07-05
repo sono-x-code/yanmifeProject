@@ -138,10 +138,6 @@ div.aboutAvatar {
 }
 
 div.buttonLinks {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; */
     display: grid;
     place-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
