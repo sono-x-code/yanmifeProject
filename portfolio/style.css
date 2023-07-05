@@ -1,0 +1,473 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0077D5;
+}
+
+body {
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* HEADER DESIGN */
+
+header {
+    
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav span a {
+    transition: color .4s linear;
+    text-align: center;
+    position: relative;
+    height: 100%;
+    padding: 15px 0;
+}
+
+nav span a::before {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: #0077D5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.4s linear;
+}
+
+nav span a::before:hover {
+    transform: translateX(left to right);
+}
+
+nav span a#about {
+    margin-right: 40px;
+}
+
+a.contactBtn {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: opacity 0.4s linear;
+}
+
+a.contactBtn:hover {
+    opacity: 0.7;
+}
+
+
+/* MAIN DESIGN  */
+/* 
+section#aboutPage{
+    margin-bottom: 90px;
+} */
+
+
+section#portfolio {
+    margin: 100px 0;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+div.welcomePage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    gap: 60px;
+}
+
+div.aboutText {
+    flex-basis: 60%;
+}
+
+div.aboutText h1 {
+    font-weight: 100;
+    font-size: 50px;
+}
+
+div.aboutText span.yamex {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+div.aboutText p {
+    font-weight: 100;
+    font-size: 20px;
+    margin: 30px 0 20px;
+}
+
+div.aboutAvatar {
+    /* background: url(); */
+    width: 500px;
+    height: 350px;
+    background-color: var(--primary-color);
+}
+
+div.buttonLinks {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+div.buttonLinks a {
+    display: flex;
+    width: 150px;
+    height: 60px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s linear;
+    font-size: 17px;
+}
+
+div.buttonLinks a:hover {
+    box-shadow: 0px 2px 6px 0px rgb(45, 171, 223);
+}
+
+
+/* SECTION TWO PORTFOLIO DESIGN */
+
+div.port_card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 100px;
+    /* align-items: center; */
+}
+
+div.image {
+    /* width: 50%; */
+    height: 600px;
+    background-color: #0077D5;
+    flex-basis: 50%;
+    border-radius: 20px;
+}
+
+div.imageOne {
+    background: url(Olumi_assets/fundmia.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+div.imageTwo {
+    background: url(Olumi_assets/Kwab\ web\ mock\ up.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageThree {
+    background: url(Olumi_assets/ceresense\ mock\ up.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageFour {
+    background: url(Olumi_assets/project\ cis.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageFive {
+    background: url(Olumi_assets/umca\ x.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageSix {
+    background: url(Olumi_assets/vision\ pro\ exploration.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageSeven {
+    background: url(Olumi_assets/snack\ run.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageEight {
+    background: url(Olumi_assets/Sky\ wallet.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageNine {
+    background: url(Olumi_assets/weather\ app.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageTen {
+    background: url(Olumi_assets/anime\ quote.png); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div.imageEleven {
+    background: url(Olumi_assets/WhatsApp\ Image\ 2023-06-26\ at\ 16.53.09.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+
+div.card_text {
+    flex-basis: 50%;
+    line-height: 2;
+}
+
+h3.cardText_header {
+    font-size: 20px;
+}
+
+h2.subheader {
+    font-size: 30px;
+}
+
+p.subText {
+    margin-bottom: 40px;
+}
+
+a.figmaLink {
+    display: flex;
+    margin-top: 30px;
+    width: 180px;
+    height: 60px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s linear;
+    font-size: 16px;
+}
+
+a.figmaLink:hover {
+    box-shadow: 0px 2px 6px 0px rgb(45, 171, 223);
+}
+
+/* CONTACT PAGE DESIGN  */
+
+section#contactPage {
+    height: 500px;
+    background-color: #141115;
+    margin-bottom: 100px;
+    /* padding: 30px; */
+}
+
+div.contactFlex {
+    width: 90%;
+    margin: 10px auto;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+div.contact_text {
+    flex-basis: 50%;
+}
+
+div.contact_text h2{
+    font-size: 40px;
+}
+
+div.contact_text p{
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+div.contact_text a{
+    font-size: 30px;
+    margin-inline: 0 40px;
+    color: #fff;
+    height: fit-content;
+    transition: color 0.4s ease-in-out;
+}
+
+i.fa-instagram:hover {
+    color: #f27fa5;
+}
+
+i.fa-github:hover {
+    color: #0077D5;
+}
+
+i.fa-message:hover {
+    color: #00f;
+}
+
+i.fa-dribbble:hover {
+    color: #ea4c89;
+}
+
+i.fa-right-to-bracket:hover {
+    color: aqua;
+}
+
+div.contactImage {
+    background-color: #fff;
+    height: 300px;
+    display: grid;
+    place-content: center;
+    border-radius: 30px;
+}
+
+div.horizon_line {
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    background-color: #000;
+}
+
+p.copyright {
+    text-align: center;
+    margin: 60px 0 80px;
+    font-size: 20px;
+}
+
+/* RESPONSIVE DESIGN  */
+
+@media screen and (max-width: 1200px) {
+    
+    nav {
+        font-size: 15px;
+    }
+
+    a.contactBtn {
+        display: grid;
+        place-content: center;
+        font-size: 10px;
+        padding: 10px 15px;
+        
+    }
+
+    div.welcomePage {
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
+
+    div.aboutText h1 {
+        font-size: 30px;
+    }
+
+    div.aboutText p {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    div.buttonLinks {
+        width: 100%;
+        margin: auto;
+        gap: 5px;
+    }
+
+    
+    div.buttonLinks a {
+        width: 80px;
+        height: 40px;
+        margin: 5px auto;
+        font-size: 12px;
+    }
+    
+    div.buttonLinks a img{
+        width: 25px;
+        height: 25px;
+    }
+
+    div.aboutAvatar {
+        margin: auto;
+    }
+
+    div.port_card {
+        display: block;
+        /* flex-direction: column; */
+    }
+
+    div.image {
+        margin: 30px 0 50px;
+    }
+
+    div.contactFlex {
+        display: block;
+        text-align: center;
+        height: 900px;
+    }
+
+    div.contactImage {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    div.contact_text p {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    div.contactIcon {
+        margin-bottom: 40px;
+    }
+
+    section#contactPage {
+        height: fit-content;
+        background-color: #141115;
+        margin-bottom: 100px;
+        /* padding: 30px; */
+    }
+}
